@@ -1,4 +1,9 @@
-# GPG setup
+---
+layout: post
+title:  "Managing stripped GPG keys"
+date:   2017-12-03 00:00 +0100
+categories: security gpg
+---
 
 ```
     +--(master pass)                   +----(user pass)--+
