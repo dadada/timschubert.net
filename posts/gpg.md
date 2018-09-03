@@ -1,8 +1,7 @@
----
-layout: post
-title:  "Managing stripped GPG keys"
-date:   2017-12-03 00:00 +0100
-categories: security gpg
+layout: post.liquid
+title: Managing stripped GPG keys
+published_date: "2017-12-03 16:18:44 +0000"
+is_draft: false
 ---
 
 ```

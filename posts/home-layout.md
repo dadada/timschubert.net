@@ -1,9 +1,9 @@
----
-layout: post
+layout: post.liquid
 title:  "My $HOME"
-date:   2017-11-18 00:00 +0100
-categories: filesystem projects
+published_date: "2018-09-03 16:18:53 +0000"
+is_draft: false
 ---
+
 Recently I came across a blog posting titled "[$HOME, sweet $HOME](https://morr.cc/home-sweet-home/)", where [@blinry](https://morr.cc/) advocates structuring your `$HOME` directory based on projects and their activity.
 Afterward reading this I felt inspired to finally have a look at the mess I made of my `$HOME` in the last couple of years.
 
@@ -31,7 +31,7 @@ A quick tour of my new `$HOME`:
 | tmp        | unsorted files, experiments      | (chaotic)              |
 | usr        | place for installing software    | like /usr              |
 
-# The project directory
+## The project directory
 
 ```shell
 $ ls ~/src
@@ -42,7 +42,7 @@ All of my projects are stored in `src`.
 I use a flat directory structure, where every project has its own subdirectory based on its name.
 Projects can become part of one or more larger contexts through the use of tags. 
 
-# Tags
+## Tags
 
 Tags are stored in `tag`.
 Each tag is a directory with the name of the tag that stores symbolic links to parts of the project.
@@ -66,7 +66,7 @@ There are four different tags in my `tag`s directory right now for tracking proj
 | hold       | links to inactive projects       | project-name/    | no             |
 | dead       | links to dead projects           | project-name/    | no             |
 
-# The Archive
+## The Archive
 
 The contents of every file in `lib` will not change after it is first moved there.
 Files that where created from a project in `src` like documents, pictures and recordings will sometimes move here.
@@ -84,6 +84,6 @@ backups  books	documents  games  courses  music  pictures  videos
 
 Organizing my personal little library based on a cataloging system still remains an item on my TODO list for when I get really bored.
 
-# Workflow
+## Workflow
 
-![Basically this]({{ "/blog/assets/home.svg"}})
+![Basically this]({{ site.base_url }}/assets/home.svg)

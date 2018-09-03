@@ -1,6 +1,16 @@
+layout: page.liquid
+title: Tim Schubert
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
----
+
+## Contact
+
+- [Mail](mailto:{{ site.data.contact.mail }})
+- [ActivityPub]({{ site.data.contact.mastodon }})
+- [Matrix]({{ site.data.contact.matrix }})
+- [GitHub](https://github.com/{{ site.data.contact.github }})
+- [PGP](assets/{{ site.data.contact.pgp }})
+
+## Blog
+
+{% for post in collections.posts.pages %}
+- [{{ post.published_date | date: "%Y-%m-%d" }} {{ post.title }}]({{ post.permalink }}){% endfor %}

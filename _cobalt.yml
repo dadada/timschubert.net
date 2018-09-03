@@ -1,0 +1,14 @@
+site:
+  title: Tim Schubert
+  description: Personal Webpage
+  base_url: https://timschubert.net/blog
+  data:
+    contact:
+      github: timschubert
+      mail: mail@timschubert.net
+      mastodon: "https://chaos.social/@dadada"
+      matrix: "https://matrix.to/#/@tim:stratum0.org"
+      pgp: "mail@timschubert.net.asc"
+
+posts:
+  rss: rss.xml
