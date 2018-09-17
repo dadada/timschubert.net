@@ -2,6 +2,8 @@ layout: post.liquid
 title:  "My $HOME"
 published_date: "2018-09-03 16:18:53 +0000"
 is_draft: false
+data:
+  route: "blog"
 ---
 
 Recently I came across a blog posting titled "[$HOME, sweet $HOME](https://morr.cc/home-sweet-home/)", where [@blinry](https://morr.cc/) advocates structuring your `$HOME` directory based on projects and their activity.
@@ -86,4 +88,4 @@ Organizing my personal little library based on a cataloging system still remains
 
 ## Workflow
 
-![Basically this]({{ site.base_url }}/assets/home.svg)
+![Basically this](assets/home.svg)

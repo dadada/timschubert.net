@@ -1,7 +1,7 @@
 site:
   title: Tim Schubert
   description: Personal Webpage
-  base_url: https://timschubert.net/blog
+  base_url: https://timschubert.net/
   data:
     contact:
       github: timschubert
@@ -11,4 +11,9 @@ site:
       pgp: "mail@timschubert.net.asc"
 
 posts:
-  rss: rss.xml
+  rss: blog/rss.xml
+  dir: blog
+
+assets:
+  sass:
+    style: Nested

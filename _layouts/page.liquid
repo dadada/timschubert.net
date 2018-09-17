@@ -2,11 +2,10 @@
 <html>
   <head>
     {% include "head.liquid" %}
-    <title>{{ page.title }}</title>
   </head>
-  <body>
+  <body class="{{ page.data.route }}">
     <header>
-      {% include "header.liquid" %}
+      {% include "menu.liquid" %}
     </header>
     <main>
       {{ page.content }}

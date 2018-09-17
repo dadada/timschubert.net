@@ -1,6 +1,8 @@
 layout: post.liquid
 title: Learning Rust
 is_draft: true
+data:
+  route: "blog"
 ---
 ## Blog!
 
