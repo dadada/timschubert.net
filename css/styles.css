@@ -1,0 +1,45 @@
+html,
+body {
+    width: 90%;
+    margin: 15px auto;
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav hr {
+    opacity: 0.5;
+}
+
+nav a, nav a:visited
+{
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+}
+
+body.about nav a.about {
+    font-weight: bold;
+}
+
+body.blog nav a.blog {
+    font-weight: bold;
+}
+
+main {
+}
+
+footer {
+    text-align: center;
+}
