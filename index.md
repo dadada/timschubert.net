@@ -1,5 +1,6 @@
 layout: page.liquid
 published_date: 2018-09-17 00:00:00 +0000
+title: About
 data:
   route: "about"
 ---
