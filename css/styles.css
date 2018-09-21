@@ -38,15 +38,13 @@ h4, h5, h6 {
     margin-top: 20px
 }
 
-nav {
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    padding: 0 15px;
+hr {
+    opacity: 0.2;
 }
 
-nav hr {
-    opacity: 0.5;
+nav {
+    text-align: center;
+    position: relative;
 }
 
 nav a, nav a:visited
@@ -57,7 +55,6 @@ nav a, nav a:visited
 body.about nav a.about,
 body.blog nav a.blog {
     font-weight: bold;
-    text-decoration: underline dotted;
 }
 
 main {
