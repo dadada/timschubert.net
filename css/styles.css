@@ -71,6 +71,23 @@ body {
     text-decoration: underline;
 }
 
+.content h1 {
+    margin-top: 0px;
+}
+
+.content h2, h3, h4, h5, h6 {
+    margin-top: 50px;
+}
+
+.content img {
+    outline: solid 1px;
+}
+
+.content table {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
 @media (max-width: 900px) {
     .wrapper {
         grid-template-rows: 5px auto;
@@ -83,12 +100,12 @@ body {
 
     .main-nav {
         justify-self: center;
+        border-bottom: 1px solid;
     }
 
     .main-nav .menu {
         flex-direction: row;
         padding: 0;
-        margin: 0;
     }
 
 }
@@ -105,6 +122,8 @@ body {
     .main-nav {
         align-self: start;
         justify-self: right;
+        border-right: 1px solid;
+
     }
 
     .main-nav .menu {
