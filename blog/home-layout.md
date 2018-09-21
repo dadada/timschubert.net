@@ -1,4 +1,4 @@
-layout: post.liquid
+layout: default.liquid
 title:  "My $HOME"
 published_date: "2018-09-03 16:18:53 +0000"
 is_draft: false

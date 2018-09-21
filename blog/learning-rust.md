@@ -1,4 +1,4 @@
-layout: post.liquid
+layout: default.liquid
 title: Learning Rust
 is_draft: true
 data:
