@@ -59,7 +59,7 @@
     }
 
     a {
-        text-decoration: underline dotted;
+        text-decoration: underline;
     }
 
     @media (aspect-ratio < 1/1), (width < 44em), (max-width: 44em) {
