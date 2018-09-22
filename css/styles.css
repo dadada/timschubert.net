@@ -1,141 +1,193 @@
-html,
-body {
-    font-family: "zillaslab";
-}
-
-.wrapper {
-    grid-gap: 10px;
-    display: grid;
-}
-
-@font-face {
-    font-family: "zillaslab";
-    src: url("/fonts/ZillaSlab.woff2");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "zillaslab";
-    src: url("/fonts/ZillaSlab-Bold.woff2");
-    font-style: normal;
-    font-weight: 700;
-}
-
-.wrapper a {
-    color: inherit;
-}
-
-.main-head {
-    grid-area: header;
-}
-
-.content {
-    grid-area: content;
-    max-width: 35em;
-    justify-self: center;
-}
-
-.main-nav {
-    grid-area: nav;
-}
-
-.license {
-    grid-area: footer;
-    font-weight: lighter;
-    justify-self: center;
-    align-self: end;
-}
-
-.main-nav .menu {
-    display: flex;
-    list-style-type: none;
-    font-size: larger;
-    padding: 0;
-    margin: 1em;
-}
-
-.main-nav a {
-    text-decoration: none;
-}
-
-.main-nav .menu li {
-    margin: 0.1em;
-}
-
-.blog .main-nav a.blog,
-.about .main-nav a.about {
-    font-weight: bold;
-}
-
-.content a {
-    text-decoration: underline;
-}
-
-.content h1 {
-    margin-top: 0;
-}
-
-.content h2, h3, h4, h5, h6 {
-    margin-top: 2em;
-}
-
-.content img {
-    margin-top: 1em;
-}
-
-.content table {
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    margin-top: 1em;
-}
-
-.content p {
-    margin-top: 30px;
-}
-
-.content ul, ol, dl {
-    margin: 0;
-    padding-left: 1em;
-}
-
-@media (max-width: 50em) {
-    .wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            "header"
-                "nav"
-                "content"
-                "footer";
+@media only screen {
+    @font-face {
+        font-family: "zillaslab";
+        src: url("/fonts/ZillaSlab.woff2");
+        font-style: normal;
+        font-weight: 400;
     }
 
-    .main-nav {
+    @font-face {
+        font-family: "zillaslab";
+        src: url("/fonts/ZillaSlab-Bold.woff2");
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    html,
+    body {
+        font-family: "zillaslab";
+    }
+
+    .wrapper {
+        grid-gap: 10px;
+        display: grid;
+    }
+
+    .main-head {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: content;
+        max-width: 35em;
         justify-self: center;
-        border-bottom: 1px solid;
-    }
-
-    .main-nav .menu {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 50em) {
-    .wrapper {
-        grid-template-columns: 1fr auto 1fr;
-        grid-template-areas:
-            "header header header"
-            "nav content .."
-            "nav footer .."
     }
 
     .main-nav {
-        align-self: start;
-        justify-self: right;
-        border-right: 1px solid;
+        grid-area: nav;
     }
 
-    .main-nav .menu {
-        flex-direction: column;
+    .main-nav menu {
+        display: flex;
     }
+
+    .license {
+        grid-area: footer;
+        justify-self: center;
+        align-self: end;
+    }
+
+    @media (width < 50em) and (aspect-ratio < 1/1),(max-width: 50em) {
+        .wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "header"
+                    "nav"
+                    "content"
+                    "footer";
+        }
+
+        .main-nav {
+            justify-self: center;
+            border-bottom: 1px solid;
+        }
+
+        .main-nav menu {
+            flex-direction: row;
+        }
+    }
+
+    @media (width >= 50em) and (aspect-ratio > 1/1),(min-width: 50em) {
+        .wrapper {
+            grid-template-columns: 1fr auto 1fr;
+            grid-template-areas:
+                "nav header header"
+                    "nav content .."
+                    "nav footer .."
+        }
+
+        .main-nav {
+            align-self: start;
+            justify-self: right;
+            border-right: 1px solid;
+        }
+
+        .main-nav menu {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen, print {
+    .license {
+        font-weight: lighter;
+    }
+
+    .wrapper a {
+        color: inherit;
+    }
+
+    .main-nav menu {
+        list-style-type: none;
+        font-size: larger;
+        padding: 0;
+    }
+
+    .main-nav menu a {
+        text-decoration: none;
+    }
+
+    .main-nav .blog a.blog,
+    .main-nav .about a.about {
+        font-weight: bold;
+    }
+
+    .main-nav {
+        padding: 1em;
+        margin: 1em;
+    }
+    .main-nav menu li {
+        margin: 0.1em;
+    }
+
+    .blog a {
+        text-decoration: underline;
+    }
+
+    .blog h2 {
+        margin-top: 3em;
+    }
+
+    .blog h3, h4, h5, h6 {
+        margin-top: 2em;
+    }
+
+    .blog img {
+        margin-top: 1em;
+    }
+
+    .blog table {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        margin-top: 1em;
+    }
+
+    .blog p {
+        margin-top: 30px;
+    }
+
+    .blog ul, ol, dl {
+        margin: 0;
+        padding-left: 1em;
+    }
+}
+
+@media only print {
+    .wrapper {
+        display: contents;
+    }
+
+    .wrapper > *:not(article) {
+        display: none;
+    }
+
+    .license {
+        display: initial;
+    }
+
+    .main-head {
+        display: initial;
+    }
+
+    article {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .blog h1 {
+        page-break-before: always;
+    }
+
+    .blog h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    .blog img,
+    .blog table {
+        page-break-inside: avoid;
+    }
+}
+
+@media only speech {
 }

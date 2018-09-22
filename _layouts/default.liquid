@@ -3,21 +3,21 @@
   <head>
     {% include "head.liquid" %}
   </head>
-  <body class="{{ page.data.route }}">
-    <div class="wrapper">
+  <body class="wrapper">
     <header class="main-head">
     {% include "header.liquid" %}
     </header>
     <nav class="main-nav">
     {% include "menu.liquid"%}
     </nav>
-    <article class="content">
+    <main>
+    <article class="{{ page.data.route }}">
       <h1>{{ page.title }}</h1>
       {{ page.content }}
     </article>
+    </main>
     <footer class="license">
       {% include "footer.liquid" %}
     </footer>
-    </div>
   </body>
 </html>
