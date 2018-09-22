@@ -1,5 +1,5 @@
 site:
-  title: Tim Schubert
+  title: dadada
   description: Personal Webpage
   base_url: https://timschubert.net/
   data:
@@ -9,6 +9,7 @@ site:
       mastodon: "https://chaos.social/@dadada"
       matrix: "https://matrix.to/#/@tim:stratum0.org"
       pgp: "mail@timschubert.net.asc"
+    author: Tim Schubert
 
 posts:
   rss: blog/rss.xml
