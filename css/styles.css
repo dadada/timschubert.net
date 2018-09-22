@@ -46,6 +46,10 @@
         justify-self: center;
         align-self: end;
     }
+    
+    a {
+        text-decoration: underline dotted;
+    }
 
     @media (width < 50em) and (aspect-ratio < 1/1),(max-width: 50em) {
         .wrapper {
@@ -94,7 +98,7 @@
         font-weight: lighter;
     }
 
-    .wrapper a {
+    a {
         color: inherit;
     }
 
@@ -113,10 +117,6 @@
     }
     .main-nav menu li {
         margin: 0.1em;
-    }
-
-    article.blogpost a {
-        text-decoration: underline;
     }
 
     article.blogpost h2 {
