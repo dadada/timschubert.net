@@ -36,6 +36,7 @@ body {
     max-width: 600px;
     justify-self: center;
     padding: 15px;
+    width: 100%;
 }
 
 .main-nav {
