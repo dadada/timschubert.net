@@ -55,7 +55,7 @@
         justify-self: center;
         align-self: end;
     }
-    
+
     a {
         text-decoration: underline dotted;
     }
@@ -71,7 +71,7 @@
                     "content"
                     "footer";
         }
-        
+
         .main-nav {
             border-bottom: 1px solid;
             justify-self: center;
