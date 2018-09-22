@@ -1,9 +1,9 @@
-layout: default.liquid
+layout: blogpost.liquid
 title:  "My $HOME"
 published_date: "2018-09-03 16:18:53 +0000"
 is_draft: false
 data:
-  route: "blog"
+  route: blog
 ---
 
 Recently, I came across a blog posting titled "[$HOME, sweet $HOME](https://morr.cc/home-sweet-home/)", where [@blinry](https://morr.cc/) advocates for structuring your `$HOME` directory based on projects and their activity.

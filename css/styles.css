@@ -100,19 +100,13 @@
 
     .main-nav menu {
         list-style-type: none;
-        font-size: larger;
+        font-size: xx-large;
         padding: 0;
     }
 
-    .main-nav menu a {
-        text-decoration: none;
+    .about #about a, .blog #blog a {
+        font-weight: bolder;
     }
-
-    .main-nav .blog a.blog,
-    .main-nav .about a.about {
-        font-weight: bold;
-    }
-
     .main-nav {
         padding: 1em;
         margin: 1em;
@@ -121,33 +115,33 @@
         margin: 0.1em;
     }
 
-    article.blog a {
+    article.blogpost a {
         text-decoration: underline;
     }
 
-    article.blog h2 {
+    article.blogpost h2 {
         margin-top: 3em;
     }
 
-    article.blog h3, h4, h5, h6 {
+    article.blogpost h3, h4, h5, h6 {
         margin-top: 2em;
     }
 
-    article.blog img {
+    article.blogpost img {
         margin-top: 1em;
     }
 
-    article.blog table {
+    article.blogpost table {
         border-bottom: 1px solid;
         border-top: 1px solid;
         margin-top: 1em;
     }
 
-    article.blog p {
+    article.blogpost p {
         margin-top: 30px;
     }
 
-    article.blog ul, ol, dl {
+    article.blogpost ul, ol, dl {
         margin: 0;
         padding-left: 1em;
     }

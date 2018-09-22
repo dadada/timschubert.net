@@ -1,9 +1,9 @@
-layout: default.liquid
+layout: blogpost.liquid
 title: Managing stripped GPG keys
 published_date: "2017-12-03 16:18:44 +0000"
 is_draft: false
 data:
-  route: "blog"
+  route: blog
 ---
 
 ```
