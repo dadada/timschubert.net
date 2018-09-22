@@ -1,7 +1,6 @@
 html,
 body {
     font-family: "zillaslab";
-    height: 100%;
 }
 
 .wrapper {
@@ -33,10 +32,8 @@ body {
 
 .content {
     grid-area: content;
-    max-width: 600px;
+    max-width: 35em;
     justify-self: center;
-    padding: 15px;
-    width: 100%;
 }
 
 .main-nav {
@@ -53,13 +50,17 @@ body {
 .main-nav .menu {
     display: flex;
     list-style-type: none;
-    font-size: 20px;
+    font-size: larger;
     padding: 0;
-    margin: 10px;
+    margin: 1em;
 }
 
 .main-nav a {
     text-decoration: none;
+}
+
+.main-nav .menu li {
+    margin: 0.1em;
 }
 
 .blog .main-nav a.blog,
@@ -72,21 +73,21 @@ body {
 }
 
 .content h1 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .content h2, h3, h4, h5, h6 {
-    margin-top: 60px;
+    margin-top: 2em;
 }
 
 .content img {
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .content table {
     border-bottom: 1px solid;
     border-top: 1px solid;
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .content p {
@@ -94,12 +95,13 @@ body {
 }
 
 .content ul, ol, dl {
-    margin: 0px;
+    margin: 0;
     padding-left: 1em;
 }
 
-@media screen and (max-width: 799px) {
+@media (max-width: 50em) {
     .wrapper {
+        grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "header"
@@ -116,16 +118,11 @@ body {
     .main-nav .menu {
         flex-direction: row;
     }
-    
-    .main-nav .menu li {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 50em) {
     .wrapper {
-        grid-template-columns: 1fr 600px 1fr;
+        grid-template-columns: 1fr auto 1fr;
         grid-template-areas:
             "header header header"
             "nav content .."
