@@ -28,8 +28,8 @@
     .wrapper {
         grid-gap: var(--grid-gap);
         display: grid;
-        margin: 0;
-        margin: 0;
+        margin: 1em;
+        margin-top: 0em;
     }
 
     .main-head {
@@ -80,7 +80,6 @@
             top: 0;
             position: sticky;
             background-color: #fff;
-
         }
 
         .main-nav menu {
