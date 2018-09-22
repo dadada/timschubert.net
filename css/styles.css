@@ -2,6 +2,8 @@ html,
 body {
     font-family: "zillaslab";
     height: 100%;
+    background-color: #000;
+    color: #fff;
 }
 
 .wrapper {
@@ -35,6 +37,8 @@ body {
     grid-area: content;
     max-width: 600px;
     justify-self: center;
+    background-color: #333;
+    padding: 15px;
 }
 
 .main-nav {
@@ -52,6 +56,7 @@ body {
     display: flex;
     list-style-type: none;
     font-size: 20px;
+    padding: 0;
 }
 
 .main-nav .menu li {
@@ -80,7 +85,7 @@ body {
 }
 
 .content img {
-    outline: solid 1px;
+    margin: 10px;
 }
 
 .content table {
@@ -88,7 +93,15 @@ body {
     border-top: 1px solid;
 }
 
-@media (max-width: 900px) {
+.content p {
+    margin: 10px;
+}
+
+.content ul, ol, dl {
+    margin: 0px;
+}
+
+@media (max-width: 700px) {
     .wrapper {
         grid-template-rows: 5px auto;
         grid-template-areas:
@@ -105,14 +118,13 @@ body {
 
     .main-nav .menu {
         flex-direction: row;
-        padding: 0;
     }
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     .wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 600px 1fr;
         grid-template-areas:
             "header header header"
             "nav content .."

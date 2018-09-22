@@ -44,7 +44,7 @@ One possible use for the tag directories is creating workbenches.
 If I use some directories in `lib` or `src` in different contexts, `tag` can be used to include them in multiple workbenches.
 
 An example workflow
-```shell
+```sh
 $ cd tag
 $ mkdir -p course1/examples
 $ ln -s ~/src/example1 course1/examples/
