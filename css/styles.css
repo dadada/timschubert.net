@@ -57,18 +57,15 @@ body {
     list-style-type: none;
     font-size: 20px;
     padding: 0;
-}
-
-.main-nav .menu li {
-    padding-right: 10px;
+    margin: 10px;
 }
 
 .main-nav a {
     text-decoration: none;
 }
 
-.blog .main-nav a.about,
-.about .main-nav a.blog {
+.blog .main-nav a.blog,
+.about .main-nav a.about {
     font-weight: bold;
 }
 
@@ -81,29 +78,31 @@ body {
 }
 
 .content h2, h3, h4, h5, h6 {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .content img {
-    margin: 10px;
+    margin-top: 30px;
 }
 
 .content table {
     border-bottom: 1px solid;
     border-top: 1px solid;
+    margin-top: 30px;
 }
 
 .content p {
-    margin: 10px;
+    margin-top: 30px;
 }
 
 .content ul, ol, dl {
     margin: 0px;
+    padding-left: 1em;
 }
 
 @media (max-width: 700px) {
     .wrapper {
-        grid-template-rows: 5px auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "header"
                 "nav"
@@ -119,7 +118,11 @@ body {
     .main-nav .menu {
         flex-direction: row;
     }
-
+    
+    .main-nav .menu li {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }
 
 @media (min-width: 700px) {
@@ -135,7 +138,6 @@ body {
         align-self: start;
         justify-self: right;
         border-right: 1px solid;
-
     }
 
     .main-nav .menu {

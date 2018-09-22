@@ -17,3 +17,6 @@ posts:
 assets:
   sass:
     style: Nested
+
+syntax_highlight:
+  theme: "base16-eighties.dark"
