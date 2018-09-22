@@ -37,6 +37,7 @@
     }
 
     main {
+        margin: 1em;
         grid-area: content;
         max-width: var(--content-width);
         justify-self: center;
