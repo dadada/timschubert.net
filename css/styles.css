@@ -121,44 +121,40 @@
         margin: 0.1em;
     }
 
-    .blog a {
+    article.blog a {
         text-decoration: underline;
     }
 
-    .blog h2 {
+    article.blog h2 {
         margin-top: 3em;
     }
 
-    .blog h3, h4, h5, h6 {
+    article.blog h3, h4, h5, h6 {
         margin-top: 2em;
     }
 
-    .blog img {
+    article.blog img {
         margin-top: 1em;
     }
 
-    .blog table {
+    article.blog table {
         border-bottom: 1px solid;
         border-top: 1px solid;
         margin-top: 1em;
     }
 
-    .blog p {
+    article.blog p {
         margin-top: 30px;
     }
 
-    .blog ul, ol, dl {
+    article.blog ul, ol, dl {
         margin: 0;
         padding-left: 1em;
     }
 }
 
 @media only print {
-    .wrapper {
-        display: contents;
-    }
-
-    .wrapper > *:not(article) {
+    .wrapper > *:not(main) {
         display: none;
     }
 
@@ -166,25 +162,12 @@
         display: initial;
     }
 
-    .main-head {
-        display: initial;
-    }
-
-    article {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .blog h1 {
-        page-break-before: always;
-    }
-
-    .blog h1, h2, h3, h4, h5, h6 {
+    article h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
     }
 
-    .blog img,
-    .blog table {
+    article img,
+    article table {
         page-break-inside: avoid;
     }
 }
