@@ -1,3 +1,10 @@
+:root {
+    --content-width: 35em;
+    --grid-gap: 1em;
+    --menu-width: 10em;
+    --menu-gap: 1em;
+}
+
 @media only screen {
     @font-face {
         font-family: "zillaslab";
@@ -19,7 +26,8 @@
     }
 
     .wrapper {
-        grid-gap: 10px;
+        margin-top: 0;
+        grid-gap: var(--grid-gap);
         display: grid;
     }
 
@@ -29,7 +37,7 @@
 
     main {
         grid-area: content;
-        max-width: 35em;
+        max-width: var(--content-width);
         justify-self: center;
     }
 
@@ -38,7 +46,8 @@
     }
 
     .main-nav menu {
-        display: flex;
+        display: grid;
+        grid-gap: var(--menu-gap);
     }
 
     .license {
@@ -51,8 +60,9 @@
         text-decoration: underline dotted;
     }
 
-    @media (width < 50em) and (aspect-ratio < 1/1),(max-width: 50em) {
+    @media (aspect-ratio < 1/1), (width < 44em), (max-width: 44em) {
         .wrapper {
+            grid-gap: 0;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto;
             grid-template-areas:
@@ -61,34 +71,41 @@
                     "content"
                     "footer";
         }
-
+        
         .main-nav {
-            justify-self: center;
             border-bottom: 1px solid;
+            justify-self: center;
+            width: 100%;
+            top: 0;
+            position: sticky;
+            background-color: #fff;
+
         }
 
         .main-nav menu {
-            flex-direction: row;
+            text-align: center;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @media (width >= 50em) and (aspect-ratio > 1/1),(min-width: 50em) {
+    @media (aspect-ratio >= 1/1), (width >= 44em), (min-width: 44em) {
         .wrapper {
             grid-template-columns: 1fr auto 1fr;
             grid-template-areas:
-                "nav header header"
                     "nav content .."
                     "nav footer .."
         }
 
         .main-nav {
-            align-self: start;
             justify-self: right;
-            border-right: 1px solid;
+            align-self: start;
+            position: sticky;
+            top: 0;
         }
 
         .main-nav menu {
-            flex-direction: column;
+            text-align: right;
+            grid-template-rows: repeat(2, 1fr);
         }
     }
 }
@@ -104,19 +121,12 @@
 
     .main-nav menu {
         list-style-type: none;
-        font-size: xx-large;
+        font-size: large;
         padding: 0;
     }
 
     .about #about a, .blog #blog a {
         font-weight: bolder;
-    }
-    .main-nav {
-        padding: 1em;
-        margin: 1em;
-    }
-    .main-nav menu li {
-        margin: 0.1em;
     }
 
     article.blogpost h2 {
@@ -132,8 +142,6 @@
     }
 
     article.blogpost table {
-        border-bottom: 1px solid;
-        border-top: 1px solid;
         margin-top: 1em;
     }
 
