@@ -5,6 +5,8 @@ data:
   route: blog
 ---
 
+# {{ page.title }}
+
 | | |
 |:-|:-|{% for post in collections.posts.pages %}{% if post.title != "Articles" %}
 | {{ post.published_date | date: "%Y-%m-%d" }} |  [{{ post.title }}](/{{ post.permalink }}) |{% endif %}{% endfor %} 
