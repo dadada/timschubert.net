@@ -2,8 +2,6 @@ html,
 body {
     font-family: "zillaslab";
     height: 100%;
-    background-color: #000;
-    color: #fff;
 }
 
 .wrapper {
@@ -37,7 +35,6 @@ body {
     grid-area: content;
     max-width: 600px;
     justify-self: center;
-    background-color: #333;
     padding: 15px;
 }
 
