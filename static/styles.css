@@ -45,11 +45,16 @@
 
     .main-nav {
         grid-area: nav;
+        font-weight: bold;
     }
 
     .main-nav menu {
         display: grid;
         grid-gap: var(--menu-gap);
+    }
+
+    .main-nav a {
+        color: black;
     }
 
     .license {
@@ -58,8 +63,10 @@
         align-self: end;
     }
 
-    a {
-        text-decoration: underline;
+    main a {
+        text-decoration: none;
+        background-color: rgba(220,220,220,.5);
+        color: #00b0bd;
     }
 
     @media (aspect-ratio < 1/1), (width < 44em), (max-width: 44em) {
@@ -101,6 +108,8 @@
             align-self: start;
             position: sticky;
             top: 0;
+            border-right: solid 1px;
+            padding-right: 1em;
         }
 
         .main-nav menu {
@@ -115,18 +124,10 @@
         font-weight: lighter;
     }
 
-    a {
-        color: inherit;
-    }
-
     .main-nav menu {
         list-style-type: none;
-        font-size: large;
+        font-size: larger;
         padding: 0;
-    }
-
-    .about #about a, .blog #blog a {
-        font-weight: bolder;
     }
 
     article.blogpost h2 {
@@ -192,6 +193,11 @@
 
     article h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
     }
 
     article img,
