@@ -139,20 +139,46 @@
 
     article.blogpost img {
         margin-top: 1em;
+        overflow: scroll;
     }
 
     article.blogpost table {
         margin-top: 1em;
+        table-style: fixed;
+        border-style: collapse;
+        white-space: nowrap;
+        border-bottom: solid 1px;
     }
 
     article.blogpost p {
-        margin-top: 30px;
+        margin-top: 1em;
     }
 
-    article.blogpost ul, ol, dl {
-        margin: 0;
+    .blogpost ul,
+    .blogpost ol,
+    .blogpost dl {
         padding-left: 1em;
     }
+
+    .blogpost th {
+        border-bottom: solid 1px;
+    }
+
+    .blogpost tr {
+        overflow: auto;
+        border: solid 1px;
+    }
+
+    .blogpost tc {
+        overflow: auto;
+    }
+
+    .blogpost code,
+    .blogpost pre,
+    .blogpost span {
+        overflow: auto;
+    }
+
 }
 
 @media only print {

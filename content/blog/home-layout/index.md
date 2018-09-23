@@ -1,10 +1,10 @@
-layout: blogpost.liquid
-title:  "My $HOME"
-published_date: "2018-09-03 16:18:53 +0000"
-is_draft: false
-data:
-  route: blog
----
++++
+title =  "My $HOME"
+date = 2018-09-03
+
+[taxonomies]
+tags = ["organisation", "linux"]
++++
 
 Recently, I came across a blog posting titled "[$HOME, sweet $HOME](https://morr.cc/home-sweet-home/)", where [@blinry](https://morr.cc/) advocates for structuring your `$HOME` directory based on projects and their activity.
 After reading this I felt inspired to finally have a look at the mess I made of my `$HOME` in the last years.
@@ -64,4 +64,4 @@ There are four different tags in `tag` directory right now for tracking project 
 
 ## Workflow
 
-![Basically this](assets/home.svg)
+![Basically this](home.svg)

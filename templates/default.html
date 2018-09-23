@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include "head.liquid" %}
+    {% include "head.html" %}
   </head>
-  <body class="wrapper {{ page.data.route }}">
+  <body class="wrapper">
     <header class="main-head">
-    {% include "header.liquid" %}
+    {% include "header.html" %}
     </header>
     <nav class="main-nav">
-    {% include "menu.liquid"%}
+    {% include "menu.html"%}
     </nav>
     <main>
-      {{ page.content }}
+        {% block content %}
+        {% endblock content %}
     </main>
     <footer class="license">
-      {% include "footer.liquid" %}
+      {% include "footer.html" %}
     </footer>
   </body>
 </html>

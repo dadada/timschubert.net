@@ -1,0 +1,18 @@
+base_url = "https://timschubert.net"
+title = "dadada"
+description = "Personal Webpage"
+default_lang = "en"
+compile_sass = true
+highlight_code = true
+highlight_theme = "1337"
+generate_rss = true
+rss_limit = 20
+build_search_index = true
+taxonomies = [
+  {name = "tags", paginate_by = 5},
+  {name = "authors"},
+]
+check_external_links = false
+
+[extra]
+author = { github = "timschubert", mail = "mail@timschubert.net", mastodon = "https://chaos.social/@dadada", matrix = "https://matrix.to/#/@tim:stratum0.org", pgp = "mail@timschubert.net.asc", name = "dadada"}

@@ -1,0 +1,11 @@
+<small>
+    {% if page is defined %}
+        {# forces every page to have a date #}
+        {{ page.date }} {% include "license.html" %}
+    {% endif %}
+    {% if section is defined %}
+        {% if section.date is defined %}
+            {{ section.date }} {% include "license.html" %}
+        {% endif %}
+    {% endif %}
+</small>
