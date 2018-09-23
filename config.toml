@@ -15,4 +15,4 @@ taxonomies = [
 check_external_links = false
 
 [extra]
-author = { github = "timschubert", mail = "mail@timschubert.net", mastodon = "https://chaos.social/@dadada", matrix = "https://matrix.to/#/@tim:stratum0.org", pgp = "mail@timschubert.net.asc", name = "dadada"}
+author = { github = "https://github.com/timschubert", mail = "mail@timschubert.net", mastodon = "https://chaos.social/@dadada", matrix = "https://matrix.to/#/@tim:stratum0.org", pgp = "mail@timschubert.net.asc", name = "dadada"}
