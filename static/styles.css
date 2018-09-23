@@ -53,23 +53,24 @@
         grid-gap: var(--menu-gap);
     }
 
-    .main-nav a {
-        color: black;
-    }
-
     .license {
         grid-area: footer;
         justify-self: center;
         align-self: end;
     }
 
-    main a {
+    a {
         text-decoration: none;
         background-color: rgba(220,220,220,.5);
         color: #00b0bd;
     }
 
-    @media (aspect-ratio < 1/1), (width < 60m), (max-width: 60em) {
+    .main-nav a {
+        background-color: unset;
+        color: unset;
+    }
+
+    @media (aspect-ratio < 1/1), (max-aspect-ratio: 1/1) {
         .wrapper {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto;
@@ -95,7 +96,7 @@
         }
     }
 
-    @media (aspect-ratio >= 1/1), (width >= 60em), (min-width: 60em) {
+    @media (aspect-ratio >= 1/1), (min-aspect-ratio: 1/1)  {
         .wrapper {
             grid-template-columns: 1fr auto 1fr;
             grid-template-areas:
