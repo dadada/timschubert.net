@@ -23,12 +23,10 @@ So my goal for the new `$HOME` was to have a clean directory structure where:
 
 A quick tour of my new `$HOME`:
 
-| directory  | usage                            | sorted by             |
-| :--------- | :------------------------------- | :---------------      |
-| lib        | immutable files                  | media-type/           |
-| src        | mutable files                    | project-name/         |
-| tag        | stores links to projects         | tag-name/project-name |
-| tmp        | unsorted files, downloads        | (chaotic)             |
+- `lib` for immutable files
+- `src` for mutable files
+- `tag` stores links to projects
+- `tmp` for unsorted files and downloads
 
 ## The project directory
 
@@ -54,13 +52,11 @@ $ rm -r course1
 
 I create new tags for various reasons, but mostly one for each larger context (e.g. work, hobbies, admin foo, thesis, courseXY) and some more for tracking project activity.
 There are four different tags in `tag` directory right now for tracking project activity:
-
-| directory  | usage                            | structure        | change files   |
-| :--------- | :------------------------------- | :--------------- | :------------: |
-| permanent  | links to permanent projects      | project-name/    | yes            |
-| active     | links to active projects         | project-name/    | yes            |
-| hold       | links to inactive projects       | project-name/    | no             |
-| dead       | links to dead projects           | project-name/    | no             |
+ 
+- permanent
+- active
+- hold
+- dead
 
 ## Workflow
 
