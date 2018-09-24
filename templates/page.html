@@ -2,6 +2,7 @@
 
 {% block meta %}
 <nav role="navigation" class="table-of-contents" title="Table of Contents">
+    {% if page.toc %}
     <h3>Contents</h3>
     <ol>
         {% for h1 in page.toc %}
@@ -19,6 +20,7 @@
         </li>
         {% endfor %}
     </ol>
+    {% endif %}
 </nav>
 {% endblock meta %}
 
