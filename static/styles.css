@@ -131,33 +131,19 @@
         padding: 0;
     }
 
-    article.blogpost h2 {
-        margin-top: 3em;
-    }
-
-    article.blogpost h3, h4, h5, h6 {
-        margin-top: 2em;
-    }
-
     article.blogpost img {
-        margin-top: 1em;
         overflow: scroll;
         max-height: 15em;
         width: auto;
     }
 
     article.blogpost table {
-        margin-top: 1em;
         white-space: nowrap;
         border-bottom: solid 1px;
     }
 
     .blogpost th {
         border-bottom: solid 1px;
-    }
-
-    article.blogpost p {
-        margin-top: 1em;
     }
 
     .blogpost pre code,
