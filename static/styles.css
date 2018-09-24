@@ -160,12 +160,6 @@
         margin-top: 1em;
     }
 
-    .blogpost ul,
-    .blogpost ol,
-    .blogpost dl {
-        padding-left: 1em;
-    }
-
     .blogpost pre code,
     .blogpost span,
     .blogpost table {
