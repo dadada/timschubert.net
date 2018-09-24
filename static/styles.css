@@ -1,6 +1,6 @@
 :root {
     --content-width: 40em;
-    --grid-gap: 0em;
+    --grid-gap: 1em;
     --menu-width: 10em;
     --menu-gap: 0em;
 }
