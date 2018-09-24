@@ -1,6 +1,6 @@
 :root {
     --content-width: 40em;
-    --grid-gap: 1em;
+    --grid-gap: 0em;
     --menu-width: 10em;
     --menu-gap: 0em;
 }
@@ -34,6 +34,29 @@
 
     .main-head {
         grid-area: header;
+    }
+
+    .table-of-contents {
+        grid-area: toc;
+    }
+
+    .table-of-contents a {
+        background-color: unset;
+    }
+
+    .tags {
+        font-size: smaller;
+
+    }
+
+    .tags ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+
+    .tags li {
+        padding-right: 0.5em;
     }
 
     main {
@@ -77,6 +100,7 @@
             grid-template-areas:
                     "nav"
                     "header"
+                    "toc"
                     "content"
                     "footer";
         }
@@ -94,14 +118,45 @@
             text-align: center;
             grid-template-columns: repeat(2, 1fr);
         }
+
+        .table-of-contents {
+            align-self: start;
+            justify-self: center;
+            max-width: var(--content-width);
+            width: 100%;
+            border-bottom: solid 1px;
+        }
+
+        .table-of-contents ol {
+            padding-left: 1em;
+        }
     }
 
     @media (aspect-ratio >= 1/1), (min-aspect-ratio: 1/1)  {
         .wrapper {
             grid-template-columns: 1fr auto 1fr;
             grid-template-areas:
+                    "nav content toc"
                     "nav content .."
                     "nav footer .."
+        }
+
+        .table-of-contents {
+            align-self: start;
+            justify-self: left;
+            position: sticky;
+            top: 0;
+            border-left: solid 1px;
+            padding-left: 1em;
+            background-color: #fff;
+        }
+
+        .table-of-contents ol {
+            padding-left: 1em;
+        }
+
+        .tags {
+            align-self: start;
         }
 
         .main-nav {
