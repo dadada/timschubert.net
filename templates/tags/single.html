@@ -2,12 +2,12 @@
 
 {% block content %}
 
-Category: {{ taxonomy.name }}
+<h2>{{ term.name }}</h2>
 
-{% for page in paginator.pages %}
-<article>
-    <h3 class="post__title"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-</article>
+{% for page in term.pages %}
+    <article>
+        <h3 class="post__title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    </article>
 {% endfor %}
 
 {% endblock content %}

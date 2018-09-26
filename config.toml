@@ -9,8 +9,7 @@ generate_rss = true
 rss_limit = 20
 build_search_index = true
 taxonomies = [
-  {name = "tags", paginate_by = 5},
-  {name = "authors"},
+  {name = "tags"},
 ]
 check_external_links = false
 

@@ -1,3 +1,10 @@
+{% extends "default.html" %}
+
+{% block content %}
+<h2>{{taxonomy.name }}</h2>
 {% for term in terms %}
-{{ term.name }}  {{ term.slug }} {{ term.pages | length }}
+<ul>
+    <a href="{{ term.permalink | safe }}" >{{ term.name }}</a>
+</ul>
 {% endfor %}
+{% endblock content %}
