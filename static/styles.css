@@ -92,6 +92,11 @@
         color: unset;
     }
 
+    .blog #blog,
+    .about #about {
+        text-decoration: underline;
+    }
+
     @media (aspect-ratio < 1/1), (max-aspect-ratio: 1/1) {
         .wrapper {
             grid-template-columns: 1fr;

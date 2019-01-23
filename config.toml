@@ -1,5 +1,5 @@
 base_url = "https://timschubert.net"
-title = "dadada"
+title = "Tim Schubert"
 description = "Personal Webpage"
 default_lang = "en"
 compile_sass = true
@@ -14,4 +14,4 @@ taxonomies = [
 check_external_links = false
 
 [extra]
-author = { github = "https://github.com/timschubert", mail = "mail@timschubert.net", mastodon = "https://chaos.social/@dadada", matrix = "https://matrix.to/#/@tim:stratum0.org", pgp = "mail@timschubert.net.asc", name = "dadada"}
+author = { github = "https://github.com/timschubert", mail = "mail@timschubert.net", pgp = "mail@timschubert.net.asc", name = "Tim Schubert"}
