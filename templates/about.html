@@ -1,0 +1,16 @@
+{% extends "default.html" %}
+
+{% block content %}
+<article class="about">
+    <h1>About</h1>
+
+    Lorem ipsum
+
+    <h2>Contact</h2>
+    <ul>
+        <li><a href="mailto:{{ config.extra.author.mail }}" rel="me" >Mail</a></li>
+        <li><a href="https://github.com/timschubert" rel="me" >GitHub</a></li>
+        <li><a href="mail@timschubert.net.asc" download="mail@timschubert.net.asc" rel="me" >PGP</a></li>
+    </ul>
+</article>
+{% endblock content %}
